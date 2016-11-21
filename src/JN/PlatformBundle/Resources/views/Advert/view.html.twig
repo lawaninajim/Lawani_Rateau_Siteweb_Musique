@@ -1,0 +1,62 @@
+{% extends "JNPlatformBundle::layout.html.twig" %}
+
+
+{% block title %}
+
+  Musiques - {{ parent() }}
+
+{% endblock %}
+
+
+{% block jnplatform_body %}
+
+
+  <h2>{{ advert.title }}</h2>
+
+  <i>Ajouté par {{ advert.author }}, le {{ advert.date|date('d/m/Y') }}</i>
+
+
+  <div class="well">
+
+    {{ advert.content }}
+
+  </div>
+
+  <img 
+
+  src="{{ asset(advert.image.webPath) }}"
+
+  alt="{{ advert.image.alt }}"
+  width = "370"
+  height = "310"
+
+/>
+  <p>
+
+    <a href="{{ path('jn_platform_home') }}" class="btn btn-default">
+
+      <i class="glyphicon glyphicon-chevron-left"></i>
+
+      Retour à la liste
+
+    </a>
+
+    <a href="{{ path('jn_platform_edit', {'id': advert.id}) }}" class="btn btn-default">
+
+      <i class="glyphicon glyphicon-edit"></i>
+
+      Modifier 
+
+    </a>
+
+    <a href="{{ path('jn_platform_delete', {'id': advert.id}) }}" class="btn btn-danger">
+
+      <i class="glyphicon glyphicon-trash"></i>
+
+      Supprimer la musique
+    </a>
+
+  </p>
+
+
+{% endblock %}

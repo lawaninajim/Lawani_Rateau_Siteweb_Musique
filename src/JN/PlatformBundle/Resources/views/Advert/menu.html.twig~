@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+
+<ul class="nav nav-pills nav-stacked">
+
+  {% for advert in listPlaylists %}
+
+    <li>
+
+      <a href="{{ path('jn_platform_view', {'id': listPlaylists.id}) }}">
+
+        {{ advert.title }}
+
+      </a>
+
+    </li>
+
+  {% endfor %}
+
+</ul>

@@ -1,0 +1,40 @@
+{% extends "JNPlatformBundle::layout.html.twig" %}
+
+
+{% block title %}
+
+  Modifier la musique - {{ parent() }}
+
+{% endblock %}
+
+
+{% block jnplatform_body %}
+
+
+  <h2>Modifier une musique</h2>
+
+
+  {{ include("JNPlatformBundle:Advert:form.html.twig") }}
+
+
+  <p>
+
+    Vous éditez une musique déjà existante.
+
+  </p>
+
+
+  <p>
+
+    <a href="{{ path('jn_platform_view', {'id': advert.id}) }}" class="btn btn-default">
+
+      <i class="glyphicon glyphicon-chevron-left"></i>
+
+      Retour à la liste
+
+    </a>
+
+  </p>
+
+
+{% endblock %}

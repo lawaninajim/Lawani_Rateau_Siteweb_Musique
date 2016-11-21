@@ -1,0 +1,31 @@
+jn_user:
+    resource: "@JNUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+jn_platform:
+    resource: "@JNPlatformBundle/Resources/config/routing.yml"
+    prefix:   /siteweb
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+login:
+
+    path: /login
+
+    defaults:
+
+        _controller: JNUserBundle:Security:login
+
+
+login_check:
+
+    path: /login_check
+
+
+logout:
+
+    path: /logout

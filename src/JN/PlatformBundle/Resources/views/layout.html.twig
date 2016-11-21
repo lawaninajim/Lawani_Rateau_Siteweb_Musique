@@ -1,0 +1,31 @@
+
+{% extends "::layout.html.twig" %}
+
+
+{% block title %}
+
+  Musiques - {{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+
+
+
+  <h1>Musiques</h1>
+
+
+  <hr>
+
+
+  {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}
+
+  {% block jnplatform_body %}
+
+  {% endblock %}
+
+
+{% endblock %}
+

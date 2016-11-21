@@ -1,0 +1,14 @@
+   
+
+
+   body{
+     background-color: #FFFCFA;
+     }
+.jumbotron {
+margin-bottom: 0px;
+height: 300px;
+color: White; 
+background-image:url(http://romaric77.fond-ecran-image.com/blog-photo/files/2015/02/IMG_0158-Paris-depuis-pont-Mirabeaun-et-b.jpg);
+
+}
+
